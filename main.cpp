@@ -24,6 +24,7 @@ int main()
     Students.push_back(move(Baptiste));
 
     // Print the list of students
+    cout << "------------------------" << endl;
     for (const auto& student : Students) {
         cout << "Student Name: " << student->GetName() << endl;
         cout << "Age: " << student->GetAge() << endl;
@@ -34,6 +35,9 @@ int main()
 
     // Sort the students by their average marks using merge sort
     mergeSort(Students, 0, Students.size() - 1);
+
+    cout << "Merge Students List : " << endl;
+    cout << "------------------------" << endl;
 
     // Print the sorted list of students
     for (const auto& student : Students) {
