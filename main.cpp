@@ -16,7 +16,12 @@ int main()
     unique_ptr<Student> Baptiste = make_unique<Student>("Baptiste BOULANGER", 19, 2, 14.2); // Add Matteo as a Student
 
     // Vector of unique pointers to Student objects
-    vector<unique_ptr<Student>> Students = {move(Jean), move(Baptiste), move(Laurenne), move(Ulysse), move(Gregoire)};
+    vector<unique_ptr<Student>> Students;
+    Students.push_back(move(Jean));
+    Students.push_back(move(Gregoire));
+    Students.push_back(move(Ulysse));
+    Students.push_back(move(Laurenne));
+    Students.push_back(move(Baptiste));
 
     // Print the list of students
     for (const auto& student : Students) {
