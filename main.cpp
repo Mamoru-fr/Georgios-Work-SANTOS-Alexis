@@ -36,7 +36,11 @@ int main()
     // Sort the students by their average marks using merge sort
     mergeSort(Students, 0, Students.size() - 1);
 
+    cout << endl;
+    cout << endl;
     cout << "Merge Students List : " << endl;
+    cout << endl;
+    cout << endl;
     cout << "------------------------" << endl;
 
     // Print the sorted list of students
