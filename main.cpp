@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <memory>
-#include "Student.h"
-#include "MergeSort.h"
+#include "Student.hpp"
+#include "MergeSort.hpp"
 
 using namespace std;
 
