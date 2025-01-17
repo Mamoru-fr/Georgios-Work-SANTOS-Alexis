@@ -36,5 +36,27 @@ int main()
         }
     }
 
+    bst.view();
+
+    cout << "coucou 1" << endl;
+
+    bst.deleteHuman("Maurice");
+
+    cout << "coucou 2" << endl;
+
+    bst.view();
+
+    for (string key : keysToSearch)
+    {
+        if (bst.search(key))
+        {
+            std::cout << key << " is present in the BST." << std::endl;
+        }
+        else
+        {
+            std::cout << key << " is not present in the BST." << std::endl;
+        }
+    }
+
     return 0;
 }
